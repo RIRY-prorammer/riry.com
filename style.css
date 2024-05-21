@@ -1,0 +1,231 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gothic A1';
+}
+body,h3,p,h4{
+    padding: 0;
+    margin: 0 ;
+}
+.container{
+    border: 1px solid rgb(235, 235, 235)
+}
+.top-bar-f{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+}
+.menu-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.icon-size{
+    font-size: 20px;
+   
+}
+.icon-size::before{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.icon-size:hover::before{
+    background-color: rgb(220, 220, 220);
+    
+}
+.border-content{
+    border: 1px solid rgb(235, 234, 234);
+    border-radius: 5px;
+    padding: 10px 10px 0px 10px
+}
+.what-yor{
+    border-radius: 40px;
+    border: 1px solid rgb(235, 235, 235);
+    text-align: left;
+    background: none;
+    padding: 10px;
+    width: 70%;
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.what-yor:hover{
+    background-color: rgb(243, 242, 242);
+}
+/* .uplaod-image:hover{
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+} */
+/* .search-message:hover{
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+} */
+.contain-pro{
+    display: flex;
+    align-items: center;
+
+}
+.post-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.top-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.profile{
+    align-items: center;
+}
+.image-pro{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.image-public{
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.date-public{
+    display: flex;
+    align-items: center;
+}
+.detail{
+    margin-inline-start: 10px;
+    width: 100%;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+}
+.status:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+.like-share{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+video{
+    border-radius: 8px;
+}
+
+.btn-close {
+    cursor: pointer;
+    border: none;
+    background: none; 
+    padding: 0;
+}
+.btn-close:hover{
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.bottom-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.like-share button{
+    border: none;
+    background-color: white;
+}
+.like-share button{
+    cursor: pointer;
+}
+.like-share button:hover{
+    color: blue;
+    /* background-color: yellow; */
+}
+.alignment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* For mobile phones: */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .container{
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        padding: 5px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding: 5px;
+}
+  }
